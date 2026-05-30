@@ -170,6 +170,104 @@
 
     </div>
   </section>
+  <!-- ═══ БЛОК "ЧОМУ МИ" — вставити в index.html ОДРАЗУ ПІСЛЯ </section> блоку hero ═══ -->
 
+<section class="why">
+  <div class="why-inner">
+    <p class="why-eyebrow">Чому ми</p>
+    <h2 class="why-title">Молода команда — досвідчені люди</h2>
+    <p class="why-lead">Ми тільки почали, але за нами — роки практики в підборі персоналу та велика база перевірених фахівців. Кожен клієнт для нас важливий, а не один із сотні.</p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">🧩</div>
+        <h3>Збираємо команди як пазл</h3>
+        <p>Підбираємо не просто «людину на посаду», а того, хто пасує до вашої команди й цілей. Кожен елемент на своєму місці.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>Досвід, якому довіряють</h3>
+        <p>У нашій команді — фахівці з великим досвідом рекрутингу й широкою базою кандидатів у різних сферах.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>Персональний підхід</h3>
+        <p>Ми не конвеєр. Працюємо уважно з кожною вакансією і кожним кандидатом — це наша перевага як молодої компанії.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ── Блок "Чому ми" ── */
+  .why {
+    background: var(--bg-light);
+    padding: 80px 24px;
+  }
+  .why-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .why-eyebrow {
+    color: var(--coral);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .why-title {
+    color: var(--navy);
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .why-lead {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 640px;
+    margin: 0 auto 56px;
+    line-height: 1.7;
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .why-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px 28px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(15,46,77,0.08);
+  }
+  .why-icon { font-size: 2.4rem; margin-bottom: 16px; }
+  .why-card h3 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .why-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 820px) {
+    .why-grid { grid-template-columns: 1fr; gap: 20px; }
+    .why-title { font-size: 1.7rem; }
+  }
+</style>  
 </body>
 </html>
