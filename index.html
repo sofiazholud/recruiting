@@ -455,6 +455,182 @@
     .form-row { flex-direction: column; }
     .emp-form-wrap { padding: 28px 20px; }
   }
+</style>
+<!-- ═══ СЕКЦІЯ ДЛЯ КАНДИДАТІВ — вставити після секції для компаній ═══ -->
+
+<section class="candidates" id="candidates">
+  <div class="cand-inner">
+    <p class="cand-eyebrow">Для кандидатів</p>
+    <h2 class="cand-title">Допоможемо знайти своє місце</h2>
+    <p class="cand-lead">Надішліть резюме — і ми підберемо роботу, що підходить саме вам. Спокійно, без тиску і безкоштовно для вас.</p>
+
+    <!-- Переваги для кандидата -->
+    <div class="cand-benefits">
+      <div class="cand-benefit">
+        <div class="cand-icon">💛</div>
+        <h3>Безкоштовно для вас</h3>
+        <p>Наші послуги для кандидатів безкоштовні. Оплачує компанія, яка шукає співробітника.</p>
+      </div>
+      <div class="cand-benefit">
+        <div class="cand-icon">🤝</div>
+        <h3>Супровід на кожному кроці</h3>
+        <p>Підкажемо, підготуємо до співбесіди, будемо поруч від першого контакту до виходу на роботу.</p>
+      </div>
+      <div class="cand-benefit">
+        <div class="cand-icon">🎯</div>
+        <h3>Підбір саме під вас</h3>
+        <p>Не просто «будь-яка вакансія», а та, що пасує вашому досвіду, цілям і цінностям.</p>
+      </div>
+    </div>
+
+    <!-- Форма резюме -->
+    <div class="cand-form-wrap">
+      <h3 class="cand-form-title">Надіслати резюме</h3>
+      <p class="cand-form-sub">Залиште контакти — і ми зв'яжемося, щойно з'явиться підхожа вакансія.</p>
+
+      <form class="cand-form" onsubmit="return false;">
+        <div class="form-row">
+          <input type="text" placeholder="Ваше ім'я" required>
+          <input type="tel" placeholder="Телефон" required>
+        </div>
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Ким хочете працювати / сфера" required>
+        <textarea placeholder="Коротко про ваш досвід (необов'язково)" rows="3"></textarea>
+        <button type="submit" class="cand-form-btn">Надіслати резюме</button>
+        <p class="cand-form-note">Або надішліть резюме файлом нам у Telegram чи на пошту — контакти нижче.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* ── Секція для кандидатів (світла, тепла) ── */
+  .candidates {
+    background: var(--bg-light);
+    padding: 80px 24px;
+  }
+  .cand-inner { max-width: 1000px; margin: 0 auto; }
+  .cand-eyebrow {
+    color: var(--coral);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .cand-title {
+    color: var(--navy);
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .cand-lead {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 56px;
+    line-height: 1.7;
+  }
+
+  /* переваги */
+  .cand-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 64px;
+  }
+  .cand-benefit {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 34px 28px;
+    text-align: left;
+  }
+  .cand-icon { font-size: 2.2rem; margin-bottom: 14px; }
+  .cand-benefit h3 {
+    color: var(--navy);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .cand-benefit p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  /* форма */
+  .cand-form-wrap {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 40px 36px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .cand-form-title {
+    color: var(--navy);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .cand-form-sub {
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .cand-form { display: flex; flex-direction: column; gap: 14px; }
+  .cand-form input,
+  .cand-form textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-dark);
+    background: var(--bg-light);
+  }
+  .cand-form input:focus,
+  .cand-form textarea:focus {
+    outline: none;
+    border-color: var(--coral);
+    background: var(--white);
+  }
+  .cand-form-btn {
+    background: var(--coral);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 6px;
+  }
+  .cand-form-btn:hover { background: var(--coral-dark); }
+  .cand-form-note {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  @media (max-width: 820px) {
+    .cand-benefits { grid-template-columns: 1fr; gap: 20px; }
+    .cand-title { font-size: 1.7rem; }
+  }
+  @media (max-width: 520px) {
+    .form-row { flex-direction: column; }
+    .cand-form-wrap { padding: 28px 20px; }
+  }
 </style>  
 </body>
 </html>
