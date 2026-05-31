@@ -41,11 +41,16 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-light);
-      color: var(--text-dark);
-      line-height: 1.6;
-    }
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-image:
+    linear-gradient(rgba(15,46,77,0.85), rgba(15,46,77,0.85)),
+    url("hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
     /* ── ШАПКА ── */
     header {
@@ -179,17 +184,12 @@
     }
 
     /* Пазли, що пливуть (для hero) */
-    .hero {
+  .hero {
   position: relative;
   overflow: hidden;
   padding: 70px 24px 90px;
   text-align: center;
   color: var(--white);
-  background-image:
-    linear-gradient(rgba(15,46,77,0.82), rgba(15,46,77,0.88)),
-    url("hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
     .pz {
